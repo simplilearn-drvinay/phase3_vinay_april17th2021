@@ -1,0 +1,16 @@
+2021-04-17 20:38:53 Saturday +0530 INFO  Log4jMain:16 - Hello from INFO
+2021-04-17 20:38:53 Saturday +0530 WARN  Log4jMain:17 - Hello from WARN
+2021-04-17 20:38:53 Saturday +0530 ERROR Log4jMain:18 - Hello from ERROR
+2021-04-17 20:38:53 Saturday +0530 FATAL Log4jMain:19 - Hello from FATAL
+2021-04-17 20:38:53 Saturday +0530 INFO  MyService:10 - hello from service1 with val : test service1
+2021-04-17 20:38:53 Saturday +0530 INFO  MyService:11 - service1 execution completed
+2021-04-17 20:38:53 Saturday +0530 INFO  MyService:15 - hello from service2 with val : test service2
+2021-04-17 20:38:53 Saturday +0530 INFO  MyService:16 - service2 execution completed
+2021-04-17 20:39:37 Saturday +0530  IST INFO  Log4jMain:16 - Hello from INFO
+2021-04-17 20:39:37 Saturday +0530  IST WARN  Log4jMain:17 - Hello from WARN
+2021-04-17 20:39:37 Saturday +0530  IST ERROR Log4jMain:18 - Hello from ERROR
+2021-04-17 20:39:37 Saturday +0530  IST FATAL Log4jMain:19 - Hello from FATAL
+2021-04-17 20:39:37 Saturday +0530  IST INFO  MyService:10 - hello from service1 with val : test service1
+2021-04-17 20:39:37 Saturday +0530  IST INFO  MyService:11 - service1 execution completed
+2021-04-17 20:39:37 Saturday +0530  IST INFO  MyService:15 - hello from service2 with val : test service2
+2021-04-17 20:39:37 Saturday +0530  IST INFO  MyService:16 - service2 execution completed
