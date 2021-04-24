@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.app.model.Address" id="a1">
+		<property name="aid" value="90000"></property>
+		<property name="cityName" value="Bangalore"></property>
+		<property name="state" value="Karnataka"></property>
+		<property name="zip" value="560006"></property>
+	</bean>
+
+	<bean id="a2" class="com.app.model.Address">
+		<property name="aid" value="90001"></property>
+		<property name="cityName" value="Chennai"></property>
+		<property name="state" value="TamilNadu"></property>
+		<property name="zip" value="760006"></property>
+	</bean>
+
+	<bean id="t1" class="com.app.model.Team">
+		<property name="teamId" value="8001"></property>
+		<property name="teamName" value="India"></property>
+	</bean>
+	<bean id="t2" class="com.app.model.Team">
+		<property name="teamId" value="8002"></property>
+		<property name="teamName"
+			value="Royal Challengers Bengalooruu"></property>
+	</bean>
+	<bean id="t3" class="com.app.model.Team">
+		<property name="teamId" value="8003"></property>
+		<property name="teamName" value="Chennai Super Kings"></property>
+	</bean>
+	<bean id="t4" class="com.app.model.Team">
+		<property name="teamId" value="8004"></property>
+		<property name="teamName" value="Delhi Team"></property>
+	</bean>
+	<bean id="p1" class="com.app.model.Player">
+		<property name="id" value="100"></property>
+		<property name="name" value="Virat Kohli"></property>
+		<property name="age" value="33"></property>
+		<property name="permanentAddress" ref="a1"></property>
+		<property name="teamList">
+		<list>
+		<ref bean="t1"/>
+		<ref bean="t2"/>
+		<ref bean="t4"/>
+		</list>
+		</property>
+	</bean>
+
+	<bean id="p2" class="com.app.model.Player">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="M S Dhoni"></constructor-arg>
+		<constructor-arg name="age" value="36"></constructor-arg>
+		<property name="permanentAddress" ref="a2"></property>
+		<property name="teamList">
+		<list>
+		<ref bean="t1"/>
+		<ref bean="t3"/>
+		</list>
+		</property>
+	</bean>
+
+</beans>
