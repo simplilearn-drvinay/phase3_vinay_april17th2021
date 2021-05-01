@@ -9,5 +9,5 @@ public interface PlayerSearchService {
 	public List<Player> getPlayersByName(String name);
 	public List<Player> getPlayersByAge(int age);
 	public List<Player> getPlayersByTeamName(String teamName);
-	public Player getPlayerByContact(int id);
+	public Player getPlayerByContact(long contact);
 }

@@ -1,7 +1,5 @@
 package com.player.service;
 
-import java.util.List;
-
 import com.player.model.Player;
 
 public interface PlayerCrudService {
